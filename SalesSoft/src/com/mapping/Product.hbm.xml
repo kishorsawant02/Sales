@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 26, 2015 8:29:33 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.domain.Product" table="PRODUCT">
+        <id name="p_id" type="int">
+            <column name="P_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="p_weight" type="int">
+            <column name="P_WEIGHT" />
+        </property>
+        <property name="p_price" type="double">
+            <column name="P_PRICE" />
+        </property>
+        <property name="p_name" type="java.lang.String">
+            <column name="P_NAME" />
+        </property>
+        <property name="p_category" type="java.lang.String">
+            <column name="P_CATEGORY" />
+        </property>
+    </class>
+</hibernate-mapping>

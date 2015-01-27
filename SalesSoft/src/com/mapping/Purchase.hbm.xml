@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 26, 2015 8:29:33 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.domain.Purchase" table="PURCHASE">
+        <id name="c_id" type="int">
+            <column name="C_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="invoiceno" type="int">
+            <column name="INVOICENO" />
+        </property>
+        <property name="p_weight" type="int">
+            <column name="P_WEIGHT" />
+        </property>
+        <property name="p_id" type="int">
+            <column name="P_ID" />
+        </property>
+        <property name="p_price" type="double">
+            <column name="P_PRICE" />
+        </property>
+        <property name="date" type="java.sql.Date">
+            <column name="DATE" />
+        </property>
+    </class>
+</hibernate-mapping>
