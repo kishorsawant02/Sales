@@ -3,19 +3,16 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated Jan 26, 2015 9:34:58 PM by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-    <class name="com.domain.User" table="USER">
-        <id name="userId" type="int">
+    <class name="com.domain.User" table="USERSALESSOFT">
+        <id name="userId" type="java.lang.Integer">
             <column name="USERID" />
             <generator class="increment" />
         </id>
-        <property name="username" type="java.lang.String">
-            <column name="USERNAME" />
+        <property name="username" column="USERNAME" type="java.lang.String" >
         </property>
-        <property name="password" type="java.lang.String">
-            <column name="PASSWORD" />
+        <property name="password" column="PASSWORD" type="java.lang.String">
         </property>
-        <property name="isAdmin" type="java.lang.Boolean">
-            <column name="ISADMIN" />
+        <property name="isAdmin" column="ISADMIN" type="java.lang.Boolean">
         </property>
     </class>
 </hibernate-mapping>

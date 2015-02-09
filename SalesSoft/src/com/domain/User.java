@@ -8,15 +8,10 @@ package com.domain;
  *
  */
 public class User {
-	private int userId;
+	
 	private String  username,password;
 	private Boolean isAdmin;
-	public int getUserId() {
-		return userId;
-	}
-	public void setUserId(int userId) {
-		this.userId = userId;
-	}
+	private Integer userId;
 	public String getUsername() {
 		return username;
 	}
@@ -39,7 +34,7 @@ public class User {
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
 		builder.append("User [userId=");
-		builder.append(userId);
+		builder.append(getUserId());
 		builder.append(", username=");
 		builder.append(username);
 		builder.append(", password=");
@@ -48,6 +43,12 @@ public class User {
 		builder.append(isAdmin);
 		builder.append("]");
 		return builder.toString();
+	}
+	public Integer getUserId() {
+		return userId;
+	}
+	public void setUserId(Integer userId) {
+		this.userId = userId;
 	}
 	
 	
